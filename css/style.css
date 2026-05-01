@@ -941,6 +941,78 @@ section.hero {
 }
 
 /* ──────────────────────────────────────────────
+   Cursor custom desktop (mix-blend-mode difference)
+   ────────────────────────────────────────────── */
+
+@media (hover: hover) and (pointer: fine) {
+  body:not(.has-no-cursor) { cursor: none; }
+  body.menu-open { cursor: auto; }
+  .cursor-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--accent-1);
+    background: var(--iv);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transition: width 0.32s var(--ease-soft), height 0.32s var(--ease-soft), background-color 0.32s, border-color 0.32s, opacity 0.25s;
+    will-change: transform;
+    opacity: 0;
+  }
+  .cursor-custom.is-ready { opacity: 1; }
+  .cursor-custom.is-hover {
+    width: 32px;
+    height: 32px;
+    background: var(--accent-1);
+    border-color: var(--accent-1);
+  }
+  .cursor-custom.is-grab {
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border-color: var(--accent-1);
+  }
+  .hero__canvas, a, button, .toggle__option, .accordion__trigger, .timer__start { cursor: none !important; }
+}
+
+/* ──────────────────────────────────────────────
+   Hero waves · plongée Bissap (Three.js trigger)
+   ────────────────────────────────────────────── */
+
+.hero__waves {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  display: none;
+}
+.hero__waves.is-active { display: block; }
+.hero__waves::before,
+.hero__waves::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-1);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0.55;
+  animation: wave-radiate 1.5s var(--ease-luxe) forwards;
+  mix-blend-mode: multiply;
+}
+.hero__waves::after { animation-delay: 0.3s; }
+@keyframes wave-radiate {
+  0%   { transform: translate(-50%, -50%) scale(0);  opacity: 0.55; }
+  100% { transform: translate(-50%, -50%) scale(18); opacity: 0; }
+}
+
+/* ──────────────────────────────────────────────
    Composants additionnels — H+55 → H+95
    ────────────────────────────────────────────── */
 

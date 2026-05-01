@@ -137,6 +137,47 @@
     }
   }
 
+  // ─── Cursor custom desktop · mix-blend-mode difference, lerp 0.15 ──
+  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    const cursor = document.createElement('div');
+    cursor.className = 'cursor-custom';
+    document.body.appendChild(cursor);
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let cursorX = mouseX;
+    let cursorY = mouseY;
+    let firstMove = false;
+
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      if (!firstMove) {
+        firstMove = true;
+        cursorX = mouseX;
+        cursorY = mouseY;
+        cursor.classList.add('is-ready');
+      }
+    });
+
+    gsap.ticker.add(() => {
+      cursorX += (mouseX - cursorX) * 0.15;
+      cursorY += (mouseY - cursorY) * 0.15;
+      cursor.style.transform = `translate(${cursorX}px, ${cursorY}px) translate(-50%, -50%)`;
+    });
+
+    const hoverables = 'a, button, .toggle__option, .accordion__trigger, .timer__start, [data-cta-stripe]';
+    document.querySelectorAll(hoverables).forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('is-hover'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('is-hover'));
+    });
+
+    document.querySelectorAll('.hero__canvas').forEach(c => {
+      c.addEventListener('mouseenter', () => cursor.classList.add('is-grab'));
+      c.addEventListener('mouseleave', () => cursor.classList.remove('is-grab'));
+    });
+  }
+
   // ─── Pinned horizontal · Section 02 territoires ────────
   const territoires = document.querySelector('.territoires');
   const territoiresPin = document.querySelector('[data-territoires-pin]');
