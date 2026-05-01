@@ -941,6 +941,78 @@ section.hero {
 }
 
 /* ──────────────────────────────────────────────
+   Cursor custom desktop (mix-blend-mode difference)
+   ────────────────────────────────────────────── */
+
+@media (hover: hover) and (pointer: fine) {
+  body:not(.has-no-cursor) { cursor: none; }
+  body.menu-open { cursor: auto; }
+  .cursor-custom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--accent-1);
+    background: var(--iv);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transition: width 0.32s var(--ease-soft), height 0.32s var(--ease-soft), background-color 0.32s, border-color 0.32s, opacity 0.25s;
+    will-change: transform;
+    opacity: 0;
+  }
+  .cursor-custom.is-ready { opacity: 1; }
+  .cursor-custom.is-hover {
+    width: 32px;
+    height: 32px;
+    background: var(--accent-1);
+    border-color: var(--accent-1);
+  }
+  .cursor-custom.is-grab {
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border-color: var(--accent-1);
+  }
+  .hero__canvas, a, button, .toggle__option, .accordion__trigger, .timer__start { cursor: none !important; }
+}
+
+/* ──────────────────────────────────────────────
+   Hero waves · plongée Bissap (Three.js trigger)
+   ────────────────────────────────────────────── */
+
+.hero__waves {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  display: none;
+}
+.hero__waves.is-active { display: block; }
+.hero__waves::before,
+.hero__waves::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-1);
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 0.55;
+  animation: wave-radiate 1.5s var(--ease-luxe) forwards;
+  mix-blend-mode: multiply;
+}
+.hero__waves::after { animation-delay: 0.3s; }
+@keyframes wave-radiate {
+  0%   { transform: translate(-50%, -50%) scale(0);  opacity: 0.55; }
+  100% { transform: translate(-50%, -50%) scale(18); opacity: 0; }
+}
+
+/* ──────────────────────────────────────────────
    Composants additionnels — H+55 → H+95
    ────────────────────────────────────────────── */
 
@@ -1124,6 +1196,44 @@ section.hero {
   padding-left: 0.5rem;
 }
 .t-ingr tr:last-child td { border-bottom: 0; }
+
+/* Variante multi-colonnes (recettes annexes §08 avec portions 4/6/8) */
+.t-ingr--multi td:not(:first-child) {
+  text-align: right;
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--accent-1);
+  white-space: nowrap;
+  padding-left: 0.5rem;
+}
+.t-ingr--multi th {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-1);
+  padding: 0 0.5rem 0.4rem 0;
+  text-align: right;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-2) 40%, transparent);
+  white-space: nowrap;
+}
+.t-ingr--multi th:first-child {
+  text-align: left;
+  padding-left: 0;
+}
+.creation-panel__service {
+  font-size: 0.93rem;
+  line-height: 1.65;
+  margin-top: 0.75rem;
+  color: var(--bleu-nuit);
+  opacity: 0.88;
+}
+.creation-panel__service em {
+  font-style: italic;
+  color: var(--accent-1);
+  margin-right: 0.25rem;
+}
 
 /* Note italique encadrée */
 .note {

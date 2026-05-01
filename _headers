@@ -1,6 +1,9 @@
 /og-bissap.jpg
   Cache-Control: public, max-age=31536000, immutable
 
+/poster-bissap.png
+  Cache-Control: public, max-age=31536000, immutable
+
 /photos/*
   Cache-Control: public, max-age=31536000, immutable
 
@@ -12,6 +15,10 @@
 
 /Favicon.png
   Cache-Control: public, max-age=2592000
+
+/c/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private, max-age=3600
 
 /*
   X-Frame-Options: DENY
