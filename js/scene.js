@@ -8,11 +8,19 @@ import * as THREE from 'https://unpkg.com/three@0.158.0/build/three.module.min.j
 (() => {
   'use strict';
 
-  // ─── Guards ──────────────────────────────────────────────
+  // ─── Guards · prefers-reduced-motion : poster PNG statique ─
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (reduceMotion) {
     document.querySelectorAll('.hero__canvas[data-scene="bissap"]').forEach(c => {
       c.style.display = 'none';
+      const poster = document.createElement('img');
+      poster.src = '/poster-bissap.png';
+      poster.alt = '';
+      poster.setAttribute('aria-hidden', 'true');
+      poster.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;pointer-events:none;';
+      c.parentNode.insertBefore(poster, c);
+      const fb = c.parentNode.querySelector('.hero__canvas-fallback');
+      if (fb) fb.style.display = 'none';
     });
     return;
   }
