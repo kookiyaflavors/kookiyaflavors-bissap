@@ -163,9 +163,11 @@
   });
 
   // ───── CTA Stripe — injection des URLs depuis data.js ─────
+  // Cible uniquement les éléments [data-cta-stripe] (les autres CTA inline
+  // peuvent être des ancres internes vers la section #achat).
   const purchaseUrl = window.BISSAP && window.BISSAP.purchaseUrl;
   if (purchaseUrl) {
-    document.querySelectorAll('.cta-float, .cta-inline').forEach(el => {
+    document.querySelectorAll('[data-cta-stripe]').forEach(el => {
       el.href = purchaseUrl;
       el.target = '_blank';
       el.rel = 'noopener noreferrer';

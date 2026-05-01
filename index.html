@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>La Capsule · Bissap — Kookiya Flavors</title>
-  <meta name="description" content="Bissap · Grenat Naissant — une traversée Éclosion Nacrée signée par La Fondatrice.">
+  <meta name="description" content="Bissap · Grenat Naissant — une traversée Éclosion Nacrée signée par La Fondatrice. Capsule digitale immersive, 65€.">
 
   <link rel="canonical" href="https://bissap.kookiyaflavors.com/">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -36,7 +36,7 @@
 
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body data-page="landing">
   <div class="progress-bar" aria-hidden="true"></div>
 
   <header class="topbar" role="banner">
@@ -44,42 +44,18 @@
     <span class="topbar__capsule"><em>Bissap · Grenat Naissant</em></span>
   </header>
 
-  <button class="ancres-trigger" aria-haspopup="true" aria-expanded="false" aria-controls="ancres-panel" aria-label="Ouvrir le sommaire des sections">
-    <span class="ancres-trigger__mark" aria-hidden="true">·</span>
-  </button>
-
-  <div class="ancres-overlay" aria-hidden="true"></div>
-
-  <nav id="ancres-panel" class="ancres-panel" aria-label="Sommaire des sections" aria-hidden="true">
-    <button class="ancres-panel__close" aria-label="Fermer le sommaire">×</button>
-    <p class="ancres-panel__eyebrow">Sommaire</p>
-    <ul class="ancres-panel__list">
-      <li><a class="ancres-panel__link" href="#invitation"><span class="ancres-panel__num">01</span><span>L'Invitation</span></a></li>
-      <li><a class="ancres-panel__link" href="#voyageur"><span class="ancres-panel__num">02</span><span>L'Ingrédient Voyageur</span></a></li>
-      <li><a class="ancres-panel__link" href="#sens"><span class="ancres-panel__num">03</span><span>Les 5 Sens en Éveil</span></a></li>
-      <li><a class="ancres-panel__link" href="#ambiance"><span class="ancres-panel__num">04</span><span>L'Ambiance</span></a></li>
-      <li><a class="ancres-panel__link" href="#composer"><span class="ancres-panel__num">05</span><span>Compose ton Moment</span></a></li>
-      <li><a class="ancres-panel__link" href="#atelier"><span class="ancres-panel__num">06</span><span>L'Atelier</span></a></li>
-      <li><a class="ancres-panel__link" href="#creations"><span class="ancres-panel__num">07</span><span>Les Créations</span></a></li>
-      <li><a class="ancres-panel__link" href="#annexe"><span class="ancres-panel__num">08</span><span>Les Recettes Annexe</span></a></li>
-      <li><a class="ancres-panel__link" href="#script"><span class="ancres-panel__num">09</span><span>Le Script</span></a></li>
-      <li><a class="ancres-panel__link" href="#adapter"><span class="ancres-panel__num">10</span><span>S'adapter</span></a></li>
-      <li><a class="ancres-panel__link" href="#essentiels"><span class="ancres-panel__num">11</span><span>Les Essentiels</span></a></li>
-      <li><a class="ancres-panel__link" href="#kookiya"><span class="ancres-panel__num">12</span><span>Le Mot de Kookiya</span></a></li>
-    </ul>
-  </nav>
-
   <main id="main">
 
-    <!-- 00 · Hero -->
+    <!-- Hero -->
     <section id="hero" class="hero" aria-label="Bissap">
       <div class="hero__canvas-fallback" aria-hidden="true"></div>
-      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+      <canvas class="hero__canvas" data-scene="bissap" aria-hidden="true"></canvas>
       <div class="lede">
         <p class="eyebrow">La Capsule · Éclosion Nacrée</p>
         <h1 class="t-display">Bissap</h1>
         <p class="t-sub">Elle porte des dizaines de noms. Ce soir, trois d'entre eux sont sur ta table.</p>
         <p class="eyebrow" style="margin-top: 2rem;">Grenat Naissant</p>
+        <a class="cta-inline" href="#achat" style="margin-top: 2.5rem;">Vivre Bissap · 65€</a>
       </div>
       <div class="hero__scroll-indicator" aria-hidden="true">
         <em>Descends</em>
@@ -87,25 +63,85 @@
       </div>
     </section>
 
-    <!-- 01 · L'Invitation -->
-    <section id="invitation" class="section section--narrow" aria-labelledby="invitation-title">
+    <!-- L'Invitation (teaser) -->
+    <section id="invitation" class="section section--narrow" aria-labelledby="inv-title">
       <div class="section__inner">
-        <p class="eyebrow section__eyebrow">01 · Rituel d'ouverture</p>
-        <h2 id="invitation-title" class="t-h2 section__title">L'Invitation</h2>
-        <p class="t-sub section__sub">À lire avant tout — le grenat qui monte.</p>
+        <p class="eyebrow section__eyebrow">L'Invitation</p>
+        <h2 id="inv-title" class="t-h2 section__title">Une fleur. Trois noms. Une seule table.</h2>
 
-        <blockquote class="t-quote section__lede" style="margin-bottom: 2.5rem;">Prends une fleur d'hibiscus séchée. Pose-la dans ta paume. Observe la couleur à sec — ce brun-rouge sombre, presque opaque. Maintenant plonge-la dans de l'eau chaude. Attends. Regarde ce qui se passe. En quelques secondes, le grenat monte. L'eau devient rouge. Le parfum s'installe. Tu es maintenant dans le temps de l'hibiscus.</blockquote>
+        <blockquote class="t-quote section__lede" style="margin-block: 2rem;">Prends une fleur d'hibiscus séchée. Pose-la dans ta paume. Plonge-la dans de l'eau chaude. Attends. Regarde ce qui se passe. En quelques secondes, le grenat monte. L'eau devient rouge. Le parfum s'installe. Tu es maintenant dans le temps de l'hibiscus.</blockquote>
 
-        <p class="eyebrow" style="margin-top: 1.5rem;">Cette Capsule est faite pour toi si…</p>
+        <div class="prose">
+          <p>L'hibiscus existe sur trois continents à la fois — et reste reconnaissable partout. Le même pétale rouge. Le même goût acide-floral. La même façon d'arrêter les conversations. En Martinique, on dit sorrel. Au Sénégal, bissap. En Thaïlande, gra jeab.</p>
+          <p>La plupart du temps, en France, on le rencontre dans un sachet de tisane. Parfois dans un jus vitaminé. Rarement dans une assiette. Presque jamais dans un verre à pied.</p>
+          <p><em>Bissap</em> change ça.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trois territoires -->
+    <section id="traversee" class="section" aria-labelledby="trav-title">
+      <div class="section__inner">
+        <p class="eyebrow section__eyebrow">Une traversée</p>
+        <h2 id="trav-title" class="t-h2 section__title">Trois continents · une seule fleur</h2>
+        <p class="t-sub section__sub">Caraïbes, Afrique de l'Ouest, Asie du Sud-Est. Trois usages, trois mémoires.</p>
+
+        <div class="card-grid">
+          <article class="territoire-panel">
+            <p class="territoire-panel__num">Territoire 1</p>
+            <h3 class="territoire-panel__title">Caraïbes</h3>
+            <p class="territoire-panel__lieu">Martinique · Guadeloupe · Haïti — Le sorrel des îles.</p>
+          </article>
+          <article class="territoire-panel">
+            <p class="territoire-panel__num">Territoire 2</p>
+            <h3 class="territoire-panel__title">Afrique de l'Ouest</h3>
+            <p class="territoire-panel__lieu">Sénégal · Mali · Côte d'Ivoire — Le bissap des marchés.</p>
+          </article>
+          <article class="territoire-panel">
+            <p class="territoire-panel__num">Territoire 3</p>
+            <h3 class="territoire-panel__title">Asie du Sud-Est</h3>
+            <p class="territoire-panel__lieu">Thaïlande · Vietnam · Philippines — Le gra jeab des jardins.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- L'Atelier (teaser) -->
+    <section id="atelier" class="section section--narrow" aria-labelledby="ate-title">
+      <div class="section__inner">
+        <p class="eyebrow section__eyebrow">Le geste</p>
+        <h2 id="ate-title" class="t-h2 section__title">Trois gestes · un silence · une question</h2>
+        <div class="prose">
+          <p>Avant le premier service, tes convives ont dans la paume une fleur d'hibiscus séchée. Tu les guides dans un geste simple : la sentir, la plonger dans l'eau chaude, regarder le grenat monter. 90 secondes de silence — personne ne parle. C'est le cœur de l'expérience.</p>
+          <p>L'hibiscus est silencieux. Aucun craquant, aucun crépitement. Cette absence est une invitation : le silence à table est un espace, pas un vide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Le menu (teaser) -->
+    <section id="menu" class="section" aria-labelledby="menu-title">
+      <div class="section__inner">
+        <p class="eyebrow section__eyebrow">Le menu</p>
+        <h2 id="menu-title" class="t-h2 section__title">Cinq créations · trois territoires</h2>
+        <p class="t-sub section__sub">Un menu construit comme un voyage — chaque plat porte une mémoire.</p>
+
         <ul class="contient">
-          <li>Tu veux offrir un moment mémorable autour d'un seul ingrédient</li>
-          <li>Tu reçois des proches et tu veux que ce repas raconte quelque chose</li>
-          <li>Tu es curieux·se des cuisines du monde et de ce qu'elles ont à se dire</li>
-          <li>Tu veux que tes convives repartent avec une image dans la tête — le grenat dans un verre à pied — et la phrase « Je ne savais pas. »</li>
-          <li>Tu veux que l'hibiscus soit traité comme ce qu'il est : un ingrédient d'exception</li>
+          <li><strong style="font-weight: 500;">Mocktail Sorrel</strong> — boisson d'accueil, gingembre, citron vert, eau gazeuse</li>
+          <li><strong style="font-weight: 500;">Salade Bissap</strong> — vinaigrette hibiscus, oranges, betteraves, roquette</li>
+          <li><strong style="font-weight: 500;">Brochettes Hibiscus</strong> — marinade hibiscus, riz à la noix de coco</li>
+          <li><strong style="font-weight: 500;">Panna Cotta Gra Jeab</strong> — coulis hibiscus-gingembre versé chaud sur la verrine froide</li>
+          <li><strong style="font-weight: 500;">Truffes Cacao × Hibiscus</strong> — mignardises de clôture</li>
         </ul>
+      </div>
+    </section>
 
-        <p class="eyebrow" style="margin-top: 3rem;">Cette Capsule contient</p>
+    <!-- Ce que contient la Capsule -->
+    <section id="contient" class="section" aria-labelledby="cont-title">
+      <div class="section__inner">
+        <p class="eyebrow section__eyebrow">Ce que tu reçois</p>
+        <h2 id="cont-title" class="t-h2 section__title">Une expérience digitale immersive en 12 sections</h2>
+        <p class="t-sub section__sub">Mobile-first, accessible à vie depuis ton compte.</p>
+
         <ul class="contient">
           <li>L'atlas du bissap · 3 territoires · profil sensoriel</li>
           <li>Les 5 sens en éveil · l'hibiscus comme architecte d'atmosphère</li>
@@ -118,885 +154,51 @@
           <li>7 adaptations · régimes · temps · budget · enfants</li>
           <li>Les essentiels · rétroplanning · courses · matériel · budget</li>
           <li>Le Mot de Kookiya</li>
+          <li>Une signature : <em>La Fondatrice</em></li>
         </ul>
       </div>
     </section>
 
-    <!-- 02 · L'Ingrédient Voyageur -->
-    <section id="voyageur" class="territoires section" aria-labelledby="voyageur-title">
+    <!-- Pour qui -->
+    <section id="pour-qui" class="section section--narrow" aria-labelledby="pq-title">
       <div class="section__inner">
-        <p class="eyebrow section__eyebrow">02 · Atlas · Hibiscus sabdariffa</p>
-        <h2 id="voyageur-title" class="t-h2 section__title">L'Ingrédient Voyageur</h2>
-        <p class="t-sub section__sub">Trois continents. Une seule fleur.</p>
-      </div>
-
-      <div class="territoires__pin" data-territoires-pin>
-        <div class="territoires__viewport">
-          <div class="territoires__track" data-territoires-track>
-
-            <article class="territoire-panel" data-territoire="caraibes">
-              <p class="territoire-panel__num">Territoire 1</p>
-              <h3 class="territoire-panel__title">Caraïbes</h3>
-              <p class="territoire-panel__lieu">Martinique · Guadeloupe · Haïti — Le sorrel des îles</p>
-              <div class="territoire-panel__body">
-                <p>En Martinique, on dit sorrel. Pas hibiscus — sorrel. Ce mot créole désigne la fleur séchée qui colore les grandes carafes des fêtes de famille. Le sorrel n'est pas une boisson d'agrément — c'est une boisson de cérémonie. Servi à Noël, à Pâques, aux baptêmes, aux mariages. Sa couleur grenat signale : il se passe quelque chose.</p>
-                <p>La recette de base — fleurs séchées, eau, gingembre frais, sucre de canne — se transmet oralement, de mère en fille, rarement écrite. Chaque famille a ses variantes : clous de girofle, cannelle, rhum agricole.</p>
-              </div>
-              <p class="territoire-panel__quote">La Caraïbe, c'est la chaleur dans le froid. Le grenat dans le verre. La célébration.</p>
-            </article>
-
-            <article class="territoire-panel" data-territoire="afrique">
-              <p class="territoire-panel__num">Territoire 2</p>
-              <h3 class="territoire-panel__title">Afrique de l'Ouest</h3>
-              <p class="territoire-panel__lieu">Sénégal · Côte d'Ivoire · Ghana · Mali — Le bissap des marchés</p>
-              <div class="territoire-panel__body">
-                <p>Au Sénégal, la première chose qu'on vous sert — chez quelqu'un, au restaurant, sur le bord de la route — c'est souvent un verre de bissap. Froid. Très rouge. Légèrement sucré. Le mot bissap désigne à la fois la plante et la boisson. En wolof, il a intégré la langue comme un mot ancien.</p>
-                <p>Ce qui distingue le bissap africain du sorrel caraïbéen, c'est l'intensité — plus concentré, plus tannique, plus profond. Au Mali et en Guinée, le bissap entre dans des sauces légèrement acides, en complément du tamarin. Cette utilisation salée révèle quelque chose d'essentiel : le bissap n'est pas qu'une boisson. C'est un acidifiant naturel, un colorant alimentaire puissant, un ingrédient polyvalent.</p>
-              </div>
-              <p class="territoire-panel__quote">L'Afrique de l'Ouest, c'est la profondeur. L'intensité. L'ingrédient qui ne cherche pas à plaire — il est là, c'est tout.</p>
-            </article>
-
-            <article class="territoire-panel" data-territoire="asie">
-              <p class="territoire-panel__num">Territoire 3</p>
-              <h3 class="territoire-panel__title">Asie du Sud-Est</h3>
-              <p class="territoire-panel__lieu">Thaïlande · Vietnam · Philippines — Le gra jeab des jardins</p>
-              <div class="territoire-panel__body">
-                <p>En Thaïlande, l'hibiscus s'appelle gra jeab — et il est partout sans faire de bruit. La boisson qu'on en tire, nam gra jeab, est servie froide, sucrée au sucre de palme, parfois avec une pincée de sel. Ce détail du sel est important : dans la cuisine thaïlandaise, le sel sur les boissons acides atténue l'amertume, rehausse le sucre, équilibre l'acidité.</p>
-                <p>Au Vietnam, les feuilles de la plante — comestibles — entrent dans des salades. La plante est traitée dans son intégralité. Aux Philippines, on l'appelle roselle — et il connaît une renaissance culinaire portée par les chefs cherchant à réhabiliter les ingrédients locaux.</p>
-              </div>
-              <p class="territoire-panel__quote">L'Asie du Sud-Est, c'est la précision. Le sel sur l'acide. La fleur traitée dans son entier.</p>
-            </article>
-
-          </div>
-        </div>
-
-        <div class="section__inner" style="margin-top: 4rem;">
-          <h3 class="essentiels-block__head">Profil sensoriel</h3>
-          <table class="t-table t-table--compact">
-            <thead><tr><th>Sens</th><th>Ce que l'hibiscus fait</th></tr></thead>
-            <tbody>
-              <tr><td>Vue</td><td>Grenat profond · rouge cerise · translucide en infusion · opaque à froid</td></tr>
-              <tr><td>Odorat</td><td>Floral discret · légèrement acide · notes de fruits rouges · végétal frais</td></tr>
-              <tr><td>Goût</td><td>Acide vif → floral → tannique léger → longue persistance</td></tr>
-              <tr><td>Texture</td><td>Liquide · soyeux en infusion froide · sirupeux concentré</td></tr>
-              <tr><td>Son</td><td>Aucun — l'hibiscus est silencieux. C'est sa couleur qui parle.</td></tr>
-            </tbody>
-          </table>
-
-          <h3 class="essentiels-block__head" style="margin-top: 2.5rem;">Trois familles d'usage</h3>
-          <table class="t-table t-table--compact">
-            <thead><tr><th>Usage</th><th>Profil</th><th>Accord idéal</th></tr></thead>
-            <tbody>
-              <tr><td>Infusion froide</td><td>Acide, floral, rafraîchissant</td><td>Gingembre · agrumes · menthe</td></tr>
-              <tr><td>Cuisson salée</td><td>Acidifiant, colorant, structurant</td><td>Viandes · légumineuses · épices</td></tr>
-              <tr><td>Coulis / sauce sucrée</td><td>Concentré, fruité, tannique</td><td>Coco · vanille · fruits tropicaux</td></tr>
-            </tbody>
-          </table>
-
-          <h3 class="essentiels-block__head" style="margin-top: 2.5rem;">Où trouver le bissap</h3>
-          <div class="prose">
-            <p>Le bissap séché se trouve en épiceries africaines, antillaises ou asiatiques, et de plus en plus en grandes surfaces. Cherche les mentions « fleurs d'hibiscus séchées » ou « bissap séché ». Évite les préparations sucrées toutes prêtes et les mélanges de tisane — tu veux la fleur pure.</p>
-            <p>En ligne : épiceries africaines en livraison, marchés spécialisés. Forme poudre disponible en épiceries fines pour les recettes qui l'exigent.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 03 · Les 5 Sens en Éveil -->
-    <section id="sens" class="section" aria-labelledby="sens-title">
-      <div class="section__inner">
-        <p class="eyebrow section__eyebrow">03 · Neurogastronomie</p>
-        <h2 id="sens-title" class="t-h2 section__title">Les 5 Sens en Éveil</h2>
-        <p class="t-sub section__sub">L'hibiscus comme architecte d'atmosphère.</p>
-
-        <div class="prose">
-          <p>Il y a des ingrédients qui cuisinent. Et il y en a qui créent une atmosphère avant même d'être mangés. L'hibiscus est dans la deuxième catégorie. Sa couleur agit avant la bouche. Son parfum arrive avant qu'on le serve.</p>
-        </div>
-
-        <div class="sens-grid">
-          <article class="sens-card">
-            <span class="sens-card__icon" aria-hidden="true">👁</span>
-            <h3 class="sens-card__title">L'Œil</h3>
-            <p class="t-sub" style="font-size: 1rem; opacity: 0.85;">Le grenat agit avant la bouche.</p>
-            <div class="sens-card__body">
-              <p>Le grenat de l'hibiscus est l'un des rouges les plus puissants qu'on puisse obtenir naturellement en cuisine. Il reste rouge — profond, presque opaque à froid, légèrement translucide au chaud. Laisse la couleur travailler. Ne la cache pas sous un autre ingrédient. L'hibiscus mérite d'être le premier élément visible dans l'assiette ou le verre.</p>
-            </div>
-          </article>
-
-          <article class="sens-card">
-            <span class="sens-card__icon" aria-hidden="true">👃</span>
-            <h3 class="sens-card__title">Le Nez</h3>
-            <p class="t-sub" style="font-size: 1rem; opacity: 0.85;">L'eau chaude libère la première phrase.</p>
-            <div class="sens-card__body">
-              <p>Le parfum de l'hibiscus est discret à sec. Il faut l'eau chaude pour le libérer. Lance l'infusion 15 minutes avant l'arrivée de tes convives — ils entreront dans un espace qui sent déjà le repas. Ce n'est pas un détail : c'est la première phrase de ta soirée.</p>
-            </div>
-          </article>
-
-          <article class="sens-card">
-            <span class="sens-card__icon" aria-hidden="true">👅</span>
-            <h3 class="sens-card__title">La Bouche</h3>
-            <p class="t-sub" style="font-size: 1rem; opacity: 0.85;">Acide vif · floral · tannique léger.</p>
-            <div class="sens-card__body">
-              <p>L'acidité arrive en premier — vive, nette. Puis le floral s'installe. Puis un tannique léger, comme un thé rouge bien infusé. La persistance est longue. Comprendre cette séquence permet de choisir quoi servir avant, quoi servir après.</p>
-            </div>
-          </article>
-
-          <article class="sens-card">
-            <span class="sens-card__icon" aria-hidden="true">🤲</span>
-            <h3 class="sens-card__title">Le Toucher</h3>
-            <p class="t-sub" style="font-size: 1rem; opacity: 0.85;">La fleur revient au vivant dans l'eau.</p>
-            <div class="sens-card__body">
-              <p>La fleur séchée est légère, presque papier. Dans l'eau chaude, elle se réhydrate, s'assouplit, reprend une forme proche du vivant. Ce geste — poser la fleur, attendre, observer — est le cœur de l'Atelier.</p>
-            </div>
-          </article>
-
-          <article class="sens-card">
-            <span class="sens-card__icon" aria-hidden="true">👂</span>
-            <h3 class="sens-card__title">L'Oreille</h3>
-            <p class="t-sub" style="font-size: 1rem; opacity: 0.85;">Le silence — la couleur parle seule.</p>
-            <div class="sens-card__body">
-              <p>L'hibiscus est silencieux. Aucun craquant, aucun crépitement. Cette absence est une invitation : le silence à table est un espace, pas un vide. Le silence de 90 secondes de l'Atelier existe précisément parce que l'hibiscus ne fait pas de bruit.</p>
-            </div>
-          </article>
-        </div>
-
-        <p class="t-quote" style="text-align: center; margin-top: 3rem; max-width: var(--max-text); margin-inline: auto;">Rouge à l'œil · parfum dans l'espace · acidité en bouche · silence à table · mémoire après.</p>
-      </div>
-    </section>
-
-    <!-- 04 · L'Ambiance -->
-    <section id="ambiance" class="section" aria-labelledby="ambiance-title">
-      <div class="section__inner">
-        <p class="eyebrow section__eyebrow">04 · Art de la table</p>
-        <h2 id="ambiance-title" class="t-h2 section__title">L'Ambiance</h2>
-        <p class="t-sub section__sub">Chaque détail dit quelque chose.</p>
-
-        <h3 class="essentiels-block__head" style="margin-top: 2rem;">Palette</h3>
-        <div class="palette-grid">
-          <div class="palette-pastille"><span class="palette-pastille__chip" style="background:#C1294A;"></span><span class="palette-pastille__label">Rouge Hibiscus</span><span class="palette-pastille__hex">#C1294A</span></div>
-          <div class="palette-pastille"><span class="palette-pastille__chip" style="background:#F2A7B8;"></span><span class="palette-pastille__label">Rose Poudré</span><span class="palette-pastille__hex">#F2A7B8</span></div>
-          <div class="palette-pastille"><span class="palette-pastille__chip" style="background:#4A6741;"></span><span class="palette-pastille__label">Vert Feuille</span><span class="palette-pastille__hex">#4A6741</span></div>
-          <div class="palette-pastille"><span class="palette-pastille__chip" style="background:#FBF3E3;"></span><span class="palette-pastille__label">Ivoire Chaud</span><span class="palette-pastille__hex">#FBF3E3</span></div>
-        </div>
-
-        <h3 class="essentiels-block__head" style="margin-top: 2.5rem;">La lumière</h3>
-        <div class="prose">
-          <p>Uniquement des bougies basses — jamais de lumière LED froide. Six à huit bougies minimum, à hauteurs différentes. Une bougie dans un verre à pied givré avec quelques fleurs d'hibiscus séchées au fond : c'est le centre de table.</p>
-        </div>
-
-        <h3 class="essentiels-block__head" style="margin-top: 2.5rem;">Le dressage</h3>
-        <ul class="adapt-card__list" style="max-width: var(--max-text);">
-          <li>Nappe ou chemin de table en lin ivoire ou rose poudré. Céramique mate de préférence — jamais de porcelaine blanche brillante.</li>
-          <li>Un verre à pied clair par convive : la couleur grenat de la boisson d'accueil doit être visible dès qu'on s'assoit.</li>
-          <li>Fleurs d'hibiscus séchées posées à plat sur la nappe entre les couverts — le détail le plus identitaire.</li>
-          <li>Couverts dorés ou argentés classiques. Lumière de fin d'après-midi pour le brunch — bougies basses pour le dîner.</li>
+        <p class="eyebrow section__eyebrow">Pour qui</p>
+        <h2 id="pq-title" class="t-h2 section__title">Cette Capsule est faite pour toi si…</h2>
+        <ul class="contient">
+          <li>Tu veux offrir un moment mémorable autour d'un seul ingrédient</li>
+          <li>Tu reçois des proches et tu veux que ce repas raconte quelque chose</li>
+          <li>Tu es curieux·se des cuisines du monde et de ce qu'elles ont à se dire</li>
+          <li>Tu veux que tes convives repartent avec une image dans la tête — le grenat dans un verre à pied — et la phrase « Je ne savais pas »</li>
+          <li>Tu veux que l'hibiscus soit traité comme ce qu'il est : un ingrédient d'exception</li>
         </ul>
-
-        <h3 class="essentiels-block__head" style="margin-top: 2.5rem;">Playlist · Bissap · Éclosion Nacrée</h3>
-        <p style="font-style: italic; opacity: 0.85; font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 1.5rem;">À l'accueil, des cordes et des voix. Pendant le repas, du groove lent. En clôture, un duo qui s'éloigne.</p>
-        <ol class="playlist">
-          <li class="playlist__row"><span class="playlist__num">01</span><span><span class="playlist__title">Below The Bassline</span><br><span class="playlist__artist">Ernest Ranglin</span></span><span class="playlist__territoire">Caraïbes</span></li>
-          <li class="playlist__row"><span class="playlist__num">02</span><span><span class="playlist__title">Chan Chan</span><br><span class="playlist__artist">Buena Vista Social Club</span></span><span class="playlist__territoire">Caraïbes</span></li>
-          <li class="playlist__row"><span class="playlist__num">03</span><span><span class="playlist__title">Sowa</span><br><span class="playlist__artist">Fatoumata Diawara</span></span><span class="playlist__territoire">Afrique de l'Ouest</span></li>
-          <li class="playlist__row"><span class="playlist__num">04</span><span><span class="playlist__title">Doxandëm</span><br><span class="playlist__artist">Cheikh Lô</span></span><span class="playlist__territoire">Afrique de l'Ouest</span></li>
-          <li class="playlist__row"><span class="playlist__num">05</span><span><span class="playlist__title">Kouma</span><br><span class="playlist__artist">Rokia Traoré</span></span><span class="playlist__territoire">Afrique de l'Ouest</span></li>
-          <li class="playlist__row"><span class="playlist__num">06</span><span><span class="playlist__title">Amidinine</span><br><span class="playlist__artist">Bombino</span></span><span class="playlist__territoire">Afrique</span></li>
-          <li class="playlist__row"><span class="playlist__num">07</span><span><span class="playlist__title">Maria También</span><br><span class="playlist__artist">Khruangbin</span></span><span class="playlist__territoire">Transition</span></li>
-          <li class="playlist__row"><span class="playlist__num">08</span><span><span class="playlist__title">Love Trap</span><br><span class="playlist__artist">Susheela Raman</span></span><span class="playlist__territoire">Asie du Sud</span></li>
-          <li class="playlist__row"><span class="playlist__num">09</span><span><span class="playlist__title">Sunrise</span><br><span class="playlist__artist">Norah Jones</span></span><span class="playlist__territoire">Transition</span></li>
-          <li class="playlist__row"><span class="playlist__num">10</span><span><span class="playlist__title">Ntoma</span><br><span class="playlist__artist">Ballaké Sissoko &amp; Vincent Segal</span></span><span class="playlist__territoire">Clôture</span></li>
-        </ol>
-        <a class="playlist-cta" href="#" aria-label="Ouvrir la playlist sur Spotify">Ouvrir sur Spotify →</a>
       </div>
     </section>
 
-    <!-- 05 · Compose ton Moment -->
-    <section id="composer" class="section" aria-labelledby="composer-title">
-      <div class="section__inner">
-        <p class="eyebrow section__eyebrow">05 · Quatre formats</p>
-        <h2 id="composer-title" class="t-h2 section__title">Compose ton Moment</h2>
-        <p class="t-sub section__sub">La Capsule s'adapte à ton soir.</p>
-
-        <div class="card-grid">
-          <article class="card">
-            <p class="card__sub">Format 1</p>
-            <h3 class="card__title">Dîner Immersif</h3>
-            <p class="card__meta"><span>6–8 personnes</span><span>3h</span></p>
-            <p style="font-size: 0.93rem; line-height: 1.65;">L'expérience complète. Tous les modules activés. Verre d'accueil sorrel · salade bissap · brochettes hibiscus + riz coco · panna cotta gra jeab. Atelier en début de soirée, script complet, silence guidé.</p>
-            <p class="composer-card__seq">Mocktail Sorrel → Atelier → Salade Bissap → Brochettes Hibiscus → Panna Cotta → Truffes.</p>
-          </article>
-
-          <article class="card">
-            <p class="card__sub">Format 2</p>
-            <h3 class="card__title">Dîner à Deux</h3>
-            <p class="card__meta"><span>2 personnes</span><span>2h</span></p>
-            <p style="font-size: 0.93rem; line-height: 1.65;">Format condensé, intimité maximale. Verre d'accueil et panna cotta en dessert. Un seul plat principal au choix. Atelier réduit à 2 gestes. Script solo adapté.</p>
-            <p class="composer-card__seq">Mocktail Sorrel → Atelier (2 gestes) → un plat principal → Panna Cotta.</p>
-          </article>
-
-          <article class="card">
-            <p class="card__sub">Format 3</p>
-            <h3 class="card__title">Brunch</h3>
-            <p class="card__meta"><span>4–6 personnes</span><span>2h</span></p>
-            <p style="font-size: 0.93rem; line-height: 1.65;">Financiers hibiscus + infusion chaude et froide côte à côte. Salade bissap en format léger. Pas de plat mijoté. L'Atelier devient l'ouverture du brunch.</p>
-            <p class="composer-card__seq">Infusion chaude → Atelier → Salade Bissap → Financiers.</p>
-          </article>
-
-          <article class="card">
-            <p class="card__sub">Format 4</p>
-            <h3 class="card__title">Apéro Dînatoire</h3>
-            <p class="card__meta"><span>6–10 personnes</span><span>1h30</span></p>
-            <p style="font-size: 0.93rem; line-height: 1.65;">Mocktail sorrel à l'arrivée. Plateau houmous × zaatar + crudités. Truffes cacao × hibiscus en mignardises. Pas de script — la boisson et les mignardises portent l'expérience.</p>
-            <p class="composer-card__seq">Mocktail Sorrel → Plateau houmous → Truffes.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 06 · L'Atelier -->
-    <section id="atelier" class="section" aria-labelledby="atelier-title">
-      <div class="section__inner section--narrow" style="margin-inline: auto;">
-        <p class="eyebrow section__eyebrow">06 · Trois gestes · Un silence · Une question</p>
-        <h2 id="atelier-title" class="t-h2 section__title">L'Atelier</h2>
-        <p class="t-sub section__sub">Avant le premier service — la fleur, l'eau, le silence.</p>
-
-        <div class="prose">
-          <p>Avant le premier service. Les convives sont assis. Il y a une coupelle de fleurs séchées à chaque place.</p>
-        </div>
-
-        <ol class="steps" style="margin-top: 2rem;">
-          <li>
-            <h3 style="font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 0.5rem;">Le Toucher · 3 minutes</h3>
-            <p class="script-step__voix">« Prenez une fleur séchée entre vos doigts. Observez sa couleur à sec — ce brun-rouge presque opaque. Sentez-la. Frottez-la légèrement pour libérer le parfum. Posez-la sur votre paume ouverte. »</p>
-          </li>
-          <li>
-            <h3 style="font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 0.5rem;">La Transformation · 90 secondes de silence</h3>
-            <p class="script-step__voix">« Plongez la fleur dans votre tasse d'eau chaude. Maintenant : silence. Regardez le grenat monter. L'eau qui change de couleur. La fleur qui se réhydrate. 90 secondes. Personne ne parle. »</p>
-          </li>
-          <li>
-            <h3 style="font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 0.5rem;">La Dégustation Comparative</h3>
-            <p>Goûter l'infusion chaude. Goûter l'infusion froide (préparée en cold brew la veille, servie en carafe). Même fleur. Deux températures. Deux profils complètement différents — l'acide est plus vif au chaud, plus rond au froid.</p>
-          </li>
-        </ol>
-
-        <p class="eyebrow" style="margin-top: 2.5rem;">Silence de 90 secondes · cœur de l'expérience</p>
-        <div class="timer" data-duration="90" data-timer-id="atelier">
-          <button class="timer__start" type="button">Commencer · 90 secondes</button>
-          <div class="timer__ring" aria-hidden="true">
-            <svg viewBox="0 0 200 200">
-              <circle cx="100" cy="100" r="92" class="timer__ring-track"></circle>
-              <circle cx="100" cy="100" r="92" class="timer__ring-progress"></circle>
-            </svg>
-            <div class="timer__count">90</div>
-          </div>
-          <p class="timer__final t-quote">Le grenat est monté.</p>
-        </div>
-
-        <div class="kookiya-block" style="margin-top: 3rem;">
-          <p class="kookiya-block__label">La question</p>
-          <p class="kookiya-block__text"><em>Si vous deviez associer l'hibiscus à un souvenir ou à un endroit dans votre vie, ce serait lequel ?</em></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 07 · Les Créations -->
-    <section id="creations" class="creations section" aria-labelledby="creations-title">
-      <div class="section__inner">
-        <p class="eyebrow section__eyebrow">07 · Cinq créations · Trois territoires</p>
-        <h2 id="creations-title" class="t-h2 section__title">Les Créations</h2>
-        <p class="t-sub section__sub">Le territoire avant le geste.</p>
-        <p style="font-style: italic; font-family: var(--font-display); opacity: 0.85; max-width: var(--max-text); font-size: 1.05rem;">Quantités pour 8 personnes — format Dîner Immersif.</p>
-      </div>
-
-      <div class="creations__viewport">
-        <div class="creations__track">
-
-          <article class="creation-panel">
-            <span class="card__badge">Caraïbes</span>
-            <h3 class="creation-panel__title">Mocktail Sorrel</h3>
-            <p class="creation-panel__sub">Boisson d'accueil · le grenat à l'arrivée.</p>
-            <p class="creation-panel__meta"><span>Très facile</span><span>15 min + 1 nuit</span></p>
-            <p class="creation-panel__contexte">En Martinique et en Guadeloupe, le sorrel est la boisson des grandes occasions. Sa couleur grenat dans un verre à pied annonce : il se passe quelque chose ce soir. C'est le premier geste visible de ta table.</p>
-            <table class="t-ingr">
-              <tbody>
-                <tr><td>Hibiscus séché</td><td>80 g</td></tr>
-                <tr><td>Eau bouillante</td><td>1 L</td></tr>
-                <tr><td>Cannelle · clous de girofle</td><td>1 bâton · 2</td></tr>
-                <tr><td>Citrons verts (jus)</td><td>4</td></tr>
-                <tr><td>Sirop de canne</td><td>60 ml</td></tr>
-                <tr><td>Gingembre frais râpé</td><td>2 cm</td></tr>
-                <tr><td>Eau gazeuse · glaçons</td><td>1 bouteille</td></tr>
-              </tbody>
-            </table>
-            <ol class="creation-panel__steps">
-              <li>J-1 — Verser l'eau bouillante sur l'hibiscus, la cannelle, les clous de girofle. Infuser 15 min couvert. Filtrer.</li>
-              <li>Ajouter le jus de citron vert et le gingembre râpé. Goûter, ajuster acidité/sucre. Ajouter le sirop. Frigo dans bocal fermé.</li>
-              <li>Jour J — 100 ml d'infusion concentrée par verre, compléter avec eau gazeuse froide (ratio 1:1,5). Glaçons, feuille de menthe.</li>
-            </ol>
-          </article>
-
-          <article class="creation-panel">
-            <span class="card__badge">Afrique de l'Ouest</span>
-            <h3 class="creation-panel__title">Salade Bissap</h3>
-            <p class="creation-panel__sub">Entrée · vinaigrette hibiscus.</p>
-            <p class="creation-panel__meta"><span>Très facile</span><span>20 min</span></p>
-            <p class="creation-panel__contexte">Le bissap dans une vinaigrette, c'est le bissap dans son usage le moins attendu en dehors du continent africain. Au Mali et en Guinée, la fleur est utilisée comme acidifiant dans les sauces de viande.</p>
-            <table class="t-ingr">
-              <tbody>
-                <tr><td>Roquette ou mesclun</td><td>150 g</td></tr>
-                <tr><td>Oranges pelées à vif</td><td>4</td></tr>
-                <tr><td>Betteraves cuites</td><td>4</td></tr>
-                <tr><td colspan="2" style="font-family: var(--font-display); font-style: italic; color: var(--accent-1); padding-top: 0.5rem;">Vinaigrette</td></tr>
-                <tr><td>Infusion bissap concentrée froide</td><td>40 ml</td></tr>
-                <tr><td>Jus d'orange · miel</td><td>30 ml · 1 c.s.</td></tr>
-                <tr><td>Huile d'olive · sel · poivre</td><td>3 c.s. · QS</td></tr>
-              </tbody>
-            </table>
-            <ol class="creation-panel__steps">
-              <li>Émulsionner miel + jus d'orange + bissap. Fouetter. Ajouter l'huile en filet. Saler, poivrer.</li>
-              <li>Dresser roquette + betteraves + oranges sur grand plat.</li>
-              <li>Verser la vinaigrette devant les convives — le geste fait partie du rituel.</li>
-            </ol>
-          </article>
-
-          <article class="creation-panel">
-            <span class="card__badge">Caraïbes</span>
-            <h3 class="creation-panel__title">Brochettes Hibiscus</h3>
-            <p class="creation-panel__sub">Plat principal · marinade hibiscus, riz coco.</p>
-            <p class="creation-panel__meta"><span>Facile</span><span>30 min + 4 h marinade</span></p>
-            <p class="creation-panel__contexte">L'acidité de la fleur attendrit la viande, le gingembre et le piment portent la chaleur caribéenne, le rouge-bordeaux teinte la surface du poulet. Visuellement saisissant avant même d'arriver à table.</p>
-            <table class="t-ingr">
-              <tbody>
-                <tr><td>Poulet en cubes 3 cm</td><td>1 kg</td></tr>
-                <tr><td>Infusion hibiscus concentrée</td><td>60 ml</td></tr>
-                <tr><td>Citrons verts (jus) · ail</td><td>4 · 3 gousses</td></tr>
-                <tr><td>Piment doux · huile d'olive</td><td>2 c.s. · 2 c.s.</td></tr>
-                <tr><td>Sel · poivre</td><td>1 c.c. · QS</td></tr>
-                <tr><td colspan="2" style="font-family: var(--font-display); font-style: italic; color: var(--accent-1); padding-top: 0.5rem;">Riz à la noix de coco</td></tr>
-                <tr><td>Riz jasmin · lait de coco</td><td>400 g · 400 ml</td></tr>
-                <tr><td>Eau · sel</td><td>400 ml · 1 c.c.</td></tr>
-              </tbody>
-            </table>
-            <ol class="creation-panel__steps">
-              <li>Mariner le poulet minimum 4 h au frigo dans le mélange hibiscus + citron + ail + piment + huile.</li>
-              <li>Cuisson : four 210 °C, 20-25 min, retourner à mi-cuisson. 2 min sous le gril pour la coloration.</li>
-              <li>Riz : porter lait de coco + eau + sel à frémissement. Ajouter le riz rincé. Couvrir, feu doux, 15 min. Reposer 5 min. Égrainer.</li>
-            </ol>
-          </article>
-
-          <article class="creation-panel">
-            <span class="card__badge">Asie du Sud-Est</span>
-            <h3 class="creation-panel__title">Panna Cotta · Coulis Hibiscus-Gingembre</h3>
-            <p class="creation-panel__sub">Dessert · le grenat sur l'ivoire.</p>
-            <p class="creation-panel__meta"><span>Facile</span><span>20 min + 4 h frigo</span></p>
-            <p class="creation-panel__contexte">La panna cotta au lait de coco est thaïlandaise dans son esprit — la douceur lactée du coco, la fraîcheur du gingembre, l'acidité de l'hibiscus. Le coulis chaud versé sur la verrine froide au dernier moment est le troisième visage de la même fleur, en une soirée.</p>
-            <table class="t-ingr">
-              <tbody>
-                <tr><td colspan="2" style="font-family: var(--font-display); font-style: italic; color: var(--accent-1); padding-top: 0.5rem;">Panna cotta (J-1)</td></tr>
-                <tr><td>Lait de coco · crème liquide</td><td>800 ml · 100 ml</td></tr>
-                <tr><td>Sucre · vanille</td><td>3 c.s. · 1 c.c.</td></tr>
-                <tr><td>Gélatine (ou agar-agar)</td><td>4 feuilles · 4 g</td></tr>
-                <tr><td colspan="2" style="font-family: var(--font-display); font-style: italic; color: var(--accent-1); padding-top: 0.5rem;">Coulis</td></tr>
-                <tr><td>Infusion hibiscus concentrée froide</td><td>200 ml</td></tr>
-                <tr><td>Lait de coco · sucre</td><td>400 ml · 2 c.s.</td></tr>
-                <tr><td>Gingembre frais râpé</td><td>1 c.c.</td></tr>
-              </tbody>
-            </table>
-            <ol class="creation-panel__steps">
-              <li>Panna cotta : tremper la gélatine 5 min. Chauffer lait de coco + crème + sucre + vanille à frémissement. Hors du feu, incorporer la gélatine essorée. Verser en verrines. Frigo 4 h minimum.</li>
-              <li>Coulis : mélanger tous les ingrédients. Chauffer 5 min à feu moyen. Laisser tiédir.</li>
-              <li>Service : sortir les verrines 10 min avant. Verser le coulis tiède devant les convives. Zeste de citron vert + 1 fleur d'hibiscus séchée en finition.</li>
-            </ol>
-          </article>
-
-          <article class="creation-panel">
-            <span class="card__badge">Transversal</span>
-            <h3 class="creation-panel__title">Truffes Cacao × Hibiscus</h3>
-            <p class="creation-panel__sub">Mignardise · clôture.</p>
-            <p class="creation-panel__meta"><span>Facile</span><span>20 min + 2 h frigo</span></p>
-            <p class="creation-panel__contexte">Le cacao et l'hibiscus sont deux ingrédients qui ont traversé le monde sur les mêmes routes. Réunis dans une truffe, ils produisent quelque chose d'inattendu : l'amertume du chocolat noir rencontre l'acidité florale de l'hibiscus, et la ganache prend une légère teinte bordeaux naturelle.</p>
-            <table class="t-ingr">
-              <tbody>
-                <tr><td>Chocolat noir 70 %</td><td>200 g</td></tr>
-                <tr><td>Crème liquide · beurre</td><td>80 ml · 20 g</td></tr>
-                <tr><td>Hibiscus en poudre</td><td>1 c.c.</td></tr>
-                <tr><td>Cacao en poudre · noix de coco râpée</td><td>50 g · 20 g</td></tr>
-              </tbody>
-            </table>
-            <ol class="creation-panel__steps">
-              <li>Chauffer crème + beurre. Verser sur le chocolat cassé. Attendre 1 minute. Mélanger en ganache lisse. Ajouter la poudre d'hibiscus.</li>
-              <li>Frigo 2 h. Façonner en boules. Rouler dans le mélange cacao + noix de coco.</li>
-              <li>Conserver au frigo jusqu'au service.</li>
-            </ol>
-            <p class="creation-panel__note">Pour 16 truffes minimum. La poudre d'hibiscus est en épiceries fines.</p>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 08 · Les Recettes Annexe -->
-    <section id="annexe" class="section" aria-labelledby="annexe-title">
-      <div class="section__inner">
-        <p class="eyebrow section__eyebrow">08 · Six recettes · Cinq sens</p>
-        <h2 id="annexe-title" class="t-h2 section__title">Les Recettes Annexe</h2>
-        <p class="t-sub section__sub">L'hibiscus dans toutes ses formes.</p>
-
-        <div class="accordion">
-
-          <div class="accordion__item">
-            <button class="accordion__trigger" type="button" aria-expanded="false">A1 · 🤲 Toucher · Infusion froide cold brew <span class="accordion__icon" aria-hidden="true">+</span></button>
-            <div class="accordion__panel"><div class="accordion__panel-inner">
-              <p class="creation-panel__contexte">L'infusion froide révèle un profil plus rond, plus long en bouche que l'infusion chaude. C'est la même fleur — une autre façon d'exister.</p>
-              <table class="t-ingr">
-                <tbody>
-                  <tr><td>Hibiscus séché · eau froide</td><td>30 g · 1 L</td></tr>
-                </tbody>
-              </table>
-              <ol class="creation-panel__steps">
-                <li>Mélanger l'hibiscus séché et l'eau froide.</li>
-                <li>Frigo 8 h minimum.</li>
-                <li>Filtrer. Pas de sucre — dégustation pure.</li>
-              </ol>
-            </div></div>
-          </div>
-
-          <div class="accordion__item">
-            <button class="accordion__trigger" type="button" aria-expanded="false">A2 · 👃 Nez · Infusion chaude de service <span class="accordion__icon" aria-hidden="true">+</span></button>
-            <div class="accordion__panel"><div class="accordion__panel-inner">
-              <p class="creation-panel__contexte">Le parfum libéré par l'eau chaude est la première phrase de ta soirée. Lance-la 15 min avant l'arrivée.</p>
-              <table class="t-ingr">
-                <tbody>
-                  <tr><td>Hibiscus séché · eau à 80 °C</td><td>20 g · 600 ml</td></tr>
-                </tbody>
-              </table>
-              <ol class="creation-panel__steps">
-                <li>Verser l'eau à 80 °C sur l'hibiscus.</li>
-                <li>Infuser 5 minutes.</li>
-                <li>Filtrer. Tenir chaud en carafe thermos.</li>
-              </ol>
-            </div></div>
-          </div>
-
-          <div class="accordion__item">
-            <button class="accordion__trigger" type="button" aria-expanded="false">A3 · 👁 Vue · Financiers à la fleur d'hibiscus <span class="accordion__icon" aria-hidden="true">+</span></button>
-            <div class="accordion__panel"><div class="accordion__panel-inner">
-              <p class="creation-panel__contexte">La poudre d'hibiscus donne aux financiers une couleur rose poudré naturelle. Visuellement subtil, exactement dans la palette Éclosion Nacrée.</p>
-              <table class="t-ingr">
-                <tbody>
-                  <tr><td>Beurre noisette · sucre glace</td><td>100 g · 150 g</td></tr>
-                  <tr><td>Farine · poudre d'amande</td><td>60 g · 80 g</td></tr>
-                  <tr><td>Blancs d'œufs · sel</td><td>4 · 1 pincée</td></tr>
-                  <tr><td>Hibiscus en poudre</td><td>1 c.s.</td></tr>
-                </tbody>
-              </table>
-              <ol class="creation-panel__steps">
-                <li>Beurre noisette : faire fondre puis cuire jusqu'à coloration noisette.</li>
-                <li>Mélanger sucre glace, farine, poudre d'amande, hibiscus, sel.</li>
-                <li>Incorporer blancs d'œufs puis beurre noisette tiédi.</li>
-                <li>Mouler. Four 200 °C, 12-13 min.</li>
-              </ol>
-            </div></div>
-          </div>
-
-          <div class="accordion__item">
-            <button class="accordion__trigger" type="button" aria-expanded="false">A4 · 👅 Goût · Vinaigrette bissap <span class="accordion__icon" aria-hidden="true">+</span></button>
-            <div class="accordion__panel"><div class="accordion__panel-inner">
-              <p class="creation-panel__contexte">Comprendre l'hibiscus en version salée, c'est comprendre pourquoi l'Afrique de l'Ouest l'a intégré dans sa cuisine bien au-delà de la boisson.</p>
-              <table class="t-ingr">
-                <tbody>
-                  <tr><td>Infusion bissap froide</td><td>40 ml</td></tr>
-                  <tr><td>Jus d'orange · miel</td><td>30 ml · 1 c.s.</td></tr>
-                  <tr><td>Huile d'olive · sel · poivre</td><td>3 c.s. · QS</td></tr>
-                </tbody>
-              </table>
-              <ol class="creation-panel__steps">
-                <li>Émulsionner miel + jus d'orange + bissap.</li>
-                <li>Ajouter l'huile en filet en fouettant.</li>
-                <li>Saler, poivrer.</li>
-              </ol>
-            </div></div>
-          </div>
-
-          <div class="accordion__item">
-            <button class="accordion__trigger" type="button" aria-expanded="false">A5 · 🌀 Texture · Sirop de canne hibiscus <span class="accordion__icon" aria-hidden="true">+</span></button>
-            <div class="accordion__panel"><div class="accordion__panel-inner">
-              <p class="creation-panel__contexte">La base de tous les cocktails et mocktails Kookiya. À faire en grande quantité et à conserver.</p>
-              <table class="t-ingr">
-                <tbody>
-                  <tr><td>Sucre de canne · eau bouillante</td><td>80 g · 80 ml</td></tr>
-                  <tr><td>Hibiscus séché</td><td>30 g</td></tr>
-                </tbody>
-              </table>
-              <ol class="creation-panel__steps">
-                <li>Verser l'eau bouillante sur le sucre. Mélanger.</li>
-                <li>Ajouter l'hibiscus séché. Infuser 10 minutes.</li>
-                <li>Filtrer. Conserver 2 semaines au frigo.</li>
-              </ol>
-            </div></div>
-          </div>
-
-          <div class="accordion__item">
-            <button class="accordion__trigger" type="button" aria-expanded="false">A6 · 🤲 Partage · Plateau houmous × zaatar <span class="accordion__icon" aria-hidden="true">+</span></button>
-            <div class="accordion__panel"><div class="accordion__panel-inner">
-              <p class="creation-panel__contexte">Le plateau partagé est un acte d'hospitalité. Le zaatar et l'hibiscus séché en déco font le lien entre les territoires sans explication.</p>
-              <table class="t-ingr">
-                <tbody>
-                  <tr><td>Pois chiches égouttés</td><td>1 boîte</td></tr>
-                  <tr><td>Tahini · jus citron vert</td><td>2 c.s. · 1</td></tr>
-                  <tr><td>Ail · huile d'olive</td><td>1 gousse · 3 c.s.</td></tr>
-                  <tr><td>Sel · cumin</td><td>QS · 1 pincée</td></tr>
-                  <tr><td>Zaatar · fleurs d'hibiscus séchées</td><td>finition · 2-3</td></tr>
-                </tbody>
-              </table>
-              <ol class="creation-panel__steps">
-                <li>Mixer pois chiches, tahini, citron, ail, huile, sel, cumin jusqu'à texture lisse.</li>
-                <li>Dresser dans un bol large.</li>
-                <li>Finition : huile d'olive + zaatar + 2-3 fleurs d'hibiscus séchées.</li>
-              </ol>
-            </div></div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 09 · Le Script -->
-    <section id="script" class="section" aria-labelledby="script-title">
-      <div class="section__inner">
-        <p class="eyebrow section__eyebrow">09 · Arc émotionnel</p>
-        <h2 id="script-title" class="t-h2 section__title">Le Script</h2>
-        <p class="t-sub section__sub">Chaque phrase a sa place.</p>
-
-        <div class="toggle" role="group" aria-label="Mode du script">
-          <span class="toggle__pill" aria-hidden="true"></span>
-          <button class="toggle__option is-active" type="button" data-mode="invites">Avec invités</button>
-          <button class="toggle__option" type="button" data-mode="solo">Solo à domicile</button>
-        </div>
-
-        <div data-script-content>
-
-          <div class="script-mode" data-mode="invites">
-            <ol class="script-timeline">
-              <li class="script-step">
-                <p class="script-step__when">Accueil — dès l'arrivée</p>
-                <p class="script-step__what">Les convives trouvent le mocktail sorrel grenat à leur place.</p>
-                <p class="script-step__voix">« Bonsoir — prenez le verre sur la table avant de vous asseoir. »</p>
-              </li>
-              <li class="script-step">
-                <p class="script-step__when">Ouverture — debout · 2 minutes max</p>
-                <p class="script-step__what">Pause. Laisser le rouge dans les verres faire son travail.</p>
-                <p class="script-step__voix">« Ce soir, il y a un seul ingrédient sur cette table. Vous l'avez peut-être déjà croisé dans une tisane. Ce soir, il est ailleurs. »</p>
-              </li>
-              <li class="script-step">
-                <p class="script-step__when">L'Atelier — avant le premier service</p>
-                <p class="script-step__what">Suivre le déroulé Module 06 : trois gestes, un silence, une question.</p>
-                <p class="script-step__voix">« Avant de manger, un geste. Prenez la fleur dans la coupelle devant vous. »</p>
-              </li>
-              <li class="script-step">
-                <p class="script-step__when">Annonce Territoire 1 — Afrique de l'Ouest</p>
-                <p class="script-step__what">Au moment de servir la salade.</p>
-                <p class="script-step__voix">« Ce que vous allez manger s'appelle bissap en wolof. Au Sénégal, c'est la première chose qu'on vous sert. Ce soir, c'est la première chose que vous mangez. »</p>
-              </li>
-              <li class="script-step">
-                <p class="script-step__when">Annonce Territoire 2 — Caraïbes</p>
-                <p class="script-step__what">Au moment de servir les brochettes.</p>
-                <p class="script-step__voix">« La même fleur. Même acidité. Autre latitude. En Martinique, on l'appelle sorrel — et on le met dans la marinade du poulet de fête. »</p>
-              </li>
-              <li class="script-step">
-                <p class="script-step__when">Interlude sensoriel</p>
-                <p class="script-step__what">Entre le plat et le dessert.</p>
-                <p class="script-step__voix">« Le coulis que vous allez recevoir est chaud. La panna cotta est froide. Regardez le rouge descendre sur l'ivoire avant de manger. »</p>
-              </li>
-              <li class="script-step">
-                <p class="script-step__when">Annonce Territoire 3 — Asie du Sud-Est</p>
-                <p class="script-step__what">Au moment de servir la panna cotta.</p>
-                <p class="script-step__voix">« En Thaïlande, on l'appelle gra jeab. On y ajoute une pincée de sel pour équilibrer l'acidité. Ce soir, on y ajoute du gingembre. Même fleur. Troisième visage. »</p>
-              </li>
-              <li class="script-step">
-                <p class="script-step__when">Clôture — debout</p>
-                <p class="script-step__what">Lecture du Mot de Kookiya · silence guidé · question.</p>
-              </li>
-            </ol>
-          </div>
-
-          <div class="script-mode" data-mode="solo" hidden>
-            <ol class="script-timeline">
-              <li class="script-step">
-                <p class="script-step__when">Avant — 30 minutes pour toi</p>
-                <p class="script-step__what">Pose une coupelle de fleurs séchées devant toi. Prépare ton verre de mocktail. Lance la playlist au casque. Allume une bougie.</p>
-              </li>
-              <li class="script-step">
-                <p class="script-step__when">L'arrivée — debout</p>
-                <p class="script-step__what">Bois le mocktail debout. Lentement. Sans regarder ton téléphone. Le grenat dans le verre, la pièce calme derrière toi.</p>
-              </li>
-              <li class="script-step">
-                <p class="script-step__when">L'Atelier — version solo</p>
-                <p class="script-step__what">Geste 1 : prends une fleur dans la paume. Geste 2 : plonge-la dans l'eau chaude, observe 90 secondes en silence, regarde le grenat monter. Geste 3 : compare le chaud et le froid.</p>
-              </li>
-              <li class="script-step">
-                <p class="script-step__when">Le repas</p>
-                <p class="script-step__what">Lance l'infusion chaude au moment où tu t'assois — le parfum d'hibiscus s'installe pendant 5 minutes pendant que tu respires. Bois lentement, en regardant la couleur dans la tasse. Si tu as envie d'une bouchée, un financier hibiscus suffit.</p>
-              </li>
-              <li class="script-step">
-                <p class="script-step__when">Après</p>
-                <p class="script-step__what">Reste à table. Ferme les yeux 60 secondes. Ce que tu viens de vivre n'est pas un repas. C'est une parenthèse sensorielle.</p>
-              </li>
-            </ol>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 10 · S'adapter en toute liberté -->
-    <section id="adapter" class="section" aria-labelledby="adapter-title">
-      <div class="section__inner">
-        <p class="eyebrow section__eyebrow">10 · Sept adaptations</p>
-        <h2 id="adapter-title" class="t-h2 section__title">S'adapter en toute liberté</h2>
-        <p class="t-sub section__sub">La Capsule reste entière. Le format change.</p>
-
-        <div class="card-grid">
-          <article class="card">
-            <p class="card__sub">Temps court · 1h30</p>
-            <p>Garder mocktail sorrel + brochettes + panna cotta + Atelier condensé à 2 gestes. Script réduit à l'ouverture et la clôture. Supprimer salade et riz.</p>
-          </article>
-          <article class="card">
-            <p class="card__sub">Petit budget · sous 40 € pour 6</p>
-            <p>Remplacer poulet par pois chiches marinés (même marinade, four 200 °C 25 min). Supprimer truffes. Financiers et mocktail sorrel restent — coût minimal.</p>
-          </article>
-          <article class="card">
-            <p class="card__sub">Sans lactose</p>
-            <ul class="adapt-card__list">
-              <li>Panna cotta : crème liquide → crème de coco entière.</li>
-              <li>Truffes : crème → lait de coco entier chauffé.</li>
-              <li>Financiers : beurre → beurre végétal ou huile de coco.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <p class="card__sub">Sans gluten</p>
-            <ul class="adapt-card__list">
-              <li>Financiers : farine T55 → farine de riz ou maïzena.</li>
-              <li>Vérifier que la poudre d'amande est certifiée sans gluten.</li>
-              <li>Houmous : pita → galettes de riz ou légumes crus.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <p class="card__sub">Végétarien</p>
-            <p>Brochettes de poulet → brochettes de halloumi mariné hibiscus (grill 3 min par face). Ou légumes rôtis seuls en plat principal + riz coco.</p>
-          </article>
-          <article class="card">
-            <p class="card__sub">Vegan</p>
-            <ul class="adapt-card__list">
-              <li>Panna cotta : gélatine → agar-agar (3 g pour 800 ml liquide).</li>
-              <li>Truffes : crème → crème de coco. Beurre → beurre de cacao.</li>
-              <li>Financiers : blancs d'œufs → aquafaba (30 ml = 1 blanc).</li>
-            </ul>
-          </article>
-          <article class="card">
-            <p class="card__sub">Avec enfants</p>
-            <ul class="adapt-card__list">
-              <li>Mocktail sorrel : réduire l'hibiscus de moitié, plus de sirop.</li>
-              <li>Marinade : supprimer le piment.</li>
-              <li>Panna cotta : plus de vanille, réduire l'hibiscus dans le coulis.</li>
-              <li>L'Atelier est idéal — les enfants adorent regarder le grenat monter dans l'eau.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 11 · Les Essentiels -->
-    <section id="essentiels" class="section" aria-labelledby="essentiels-title">
-      <div class="section__inner">
-        <p class="eyebrow section__eyebrow">11 · Organisation</p>
-        <h2 id="essentiels-title" class="t-h2 section__title">Les Essentiels</h2>
-        <p class="t-sub section__sub">Tout ce qu'il faut. Rien de plus.</p>
-
-        <div class="essentiels-blocks">
-
-          <div>
-            <h3 class="essentiels-block__head">Rétroplanning</h3>
-            <ol class="timeline">
-              <li class="timeline__step"><p class="timeline__when">J-3</p><p class="timeline__what">Commander hibiscus séché (200-300 g), hibiscus en poudre (50 g), tahini, zaatar — épicerie africaine ou en ligne.</p></li>
-              <li class="timeline__step"><p class="timeline__when">J-2</p><p class="timeline__what">Vérifier maturité des avocats si utilisés. Acheter gingembre, menthe, citrons verts si pas encore fait.</p></li>
-              <li class="timeline__step"><p class="timeline__when">J-1 matin</p><p class="timeline__what">Panna cotta ×8 → frigo. Cold brew hibiscus (1 L eau froide + 30 g hibiscus) → frigo 8 h.</p></li>
-              <li class="timeline__step"><p class="timeline__when">J-1 après-midi</p><p class="timeline__what">Truffes cacao × hibiscus → frigo. Financiers → boîte hermétique. Sirop de canne → frigo. Base mocktail sorrel concentrée → frigo. Marinade poulet → frigo. Houmous → frigo. Crudités → eau froide au frigo.</p></li>
-              <li class="timeline__step"><p class="timeline__when">Jour J · H-2 (18 h)</p><p class="timeline__what">Sortir poulet mariné. Dresser la table. Préchauffer four 210 °C. Enfourner légumes. Monter brochettes. Préparer infusion chaude atelier. Dresser plateau houmous.</p></li>
-            </ol>
-          </div>
-
-          <div>
-            <h3 class="essentiels-block__head">Liste de courses</h3>
-            <div class="courses">
-              <div>
-                <p class="courses__cat-title">Épicerie fine — J-3</p>
-                <ul class="courses__list" data-checklist data-checklist-id="courses-fine">
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-hib"> <span>Hibiscus séché fleurs 200-300 g</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-hib-p"> <span>Hibiscus en poudre 50 g</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-tahini"> <span>Tahini 100 g</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-zaatar"> <span>Zaatar 30 g</span></label></li>
-                </ul>
-              </div>
-              <div>
-                <p class="courses__cat-title">Frais — J-1</p>
-                <ul class="courses__list" data-checklist data-checklist-id="courses-frais">
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-poulet"> <span>Cuisses de poulet désossées 1 kg</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-roquette"> <span>Roquette 150 g · oranges ×4 · betteraves cuites ×4</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-legumes"> <span>Poivrons ×4 · courgettes ×3 · patate douce ×2</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-coriandre"> <span>Coriandre fraîche · concombre ×2 · carottes ×3</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-citrons"> <span>Citrons verts ×8 · gingembre frais · menthe</span></label></li>
-                </ul>
-              </div>
-              <div>
-                <p class="courses__cat-title">Épicerie courante</p>
-                <ul class="courses__list" data-checklist data-checklist-id="courses-courante">
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-riz"> <span>Riz basmati ou jasmin 500 g · pois chiches × 1 boîte · pita ×8</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-coco"> <span>Lait de coco × 3 boîtes 400 ml · crème liquide 20 cl</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-beurre"> <span>Beurre 125 g · œufs ×6 · gélatine (4 feuilles) ou agar-agar 4 g</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-choco"> <span>Chocolat noir 70 % 200 g · cacao 50 g</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-farines"> <span>Farine T55 200 g · sucre glace 150 g · sucre de canne 300 g</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-amande"> <span>Poudre d'amande 80 g · noix de coco râpée 50 g</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-misc"> <span>Huile d'olive · miel · piment doux · ail · vanille · fleur de sel</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-eau"> <span>Eau gazeuse × 3 bouteilles</span></label></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="essentiels-block__head">Matériel</h3>
-            <div class="courses">
-              <div>
-                <p class="courses__cat-title">Indispensable</p>
-                <ul class="adapt-card__list">
-                  <li>Passoire fine</li>
-                  <li>Verres à pied clairs</li>
-                  <li>Verrines transparentes · tasses individuelles · coupelles</li>
-                  <li>Plat à four · casseroles · fouet</li>
-                </ul>
-              </div>
-              <div>
-                <p class="courses__cat-title">Idéal</p>
-                <ul class="adapt-card__list">
-                  <li>Chemin de table en lin ivoire ou rose poudré</li>
-                  <li>Bougies basses ivoire ou rose poudré × 8 minimum</li>
-                  <li>Céramique mate pour le service</li>
-                  <li>Carafe pour le mocktail</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="essentiels-block__head">Estimation budgétaire</h3>
-            <table class="budget-table">
-              <thead><tr><th>Format</th><th>Budget courses</th><th>Par personne</th></tr></thead>
-              <tbody>
-                <tr><td>Dîner immersif · 6-8 pers.</td><td>45 – 65 €</td><td>7 – 9 €</td></tr>
-                <tr><td>Dîner à deux</td><td>20 – 28 €</td><td>10 – 14 €</td></tr>
-                <tr><td>Brunch · 4-6 pers.</td><td>25 – 35 €</td><td>6 – 9 €</td></tr>
-                <tr><td>Apéro dînatoire · 6-10 pers.</td><td>30 – 40 €</td><td>3 – 5 €</td></tr>
-              </tbody>
-            </table>
-            <p class="note">Fourchette basse : courses supermarché. Fourchette haute : épicerie fine + hibiscus premium.</p>
-          </div>
-
-          <div>
-            <h3 class="essentiels-block__head">Check-list Jour J</h3>
-            <div class="courses">
-              <div>
-                <p class="courses__cat-title">Avant</p>
-                <ul class="courses__list" data-checklist data-checklist-id="checklist-avant">
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-playlist"> <span>Playlist lancée — 15 min avant</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-bougies"> <span>Bougies allumées — 20 min avant</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-table"> <span>Table dressée · fleurs séchées en déco</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-infusion"> <span>Infusion hibiscus chaude lancée — 15 min avant</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-verre"> <span>Verre d'accueil posé à chaque place</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-coupelles"> <span>Coupelles d'atelier · fleurs séchées dessus</span></label></li>
-                </ul>
-              </div>
-              <div>
-                <p class="courses__cat-title">À table</p>
-                <ul class="courses__list" data-checklist data-checklist-id="checklist-table">
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-grenat"> <span>Convives trouvent le verre grenat à leur place</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-intro"> <span>Introduction courte debout — 2 min max</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-g1"> <span>Atelier · geste 1 (toucher)</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-g2"> <span>Atelier · geste 2 (transformation · 90 sec silence)</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-g3"> <span>Atelier · geste 3 (dégustation comparative)</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-question"> <span>Question posée</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-salade"> <span>Salade · vinaigrette versée devant les convives</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-plat"> <span>Plat · annonce territoire</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-coulis"> <span>Coulis chaud versé en interlude · annonce territoire</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-panna"> <span>Panna cotta · coulis versé en silence</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-mignardises"> <span>Truffes et financiers en clôture</span></label></li>
-                  <li><label class="courses__check"><input type="checkbox" data-key="b-c-mot"> <span>Mot de clôture debout</span></label></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- 12 · Le Mot de Kookiya -->
-    <section id="kookiya" class="section section--narrow" aria-labelledby="kookiya-title">
+    <!-- Mot de Kookiya teaser -->
+    <section id="mot" class="section section--narrow" aria-labelledby="mot-title">
       <div class="section__inner" style="text-align: center;">
-        <p class="eyebrow section__eyebrow">12 · Clôture</p>
-        <h2 id="kookiya-title" class="t-h2 section__title">Le Mot de Kookiya</h2>
-        <p class="t-sub section__sub">À lire debout — avant la dernière bouchée.</p>
+        <p class="eyebrow section__eyebrow">Le Mot de Kookiya</p>
+        <h2 id="mot-title" class="t-h2 section__title">L'intention avant la complexité</h2>
+        <blockquote class="t-quote" style="margin-block: 2rem;">Kookiya existe pour changer ça. Pas avec de la complexité — avec de l'intention. Une fleur séchée entre les doigts. Une couleur qui monte dans l'eau chaude. Un silence de 90 secondes.</blockquote>
+        <p style="font-family: var(--font-script); font-size: 2rem; color: var(--accent-1); line-height: 1; margin-top: 2rem;">La Fondatrice</p>
+        <p style="font-family: var(--font-body); font-size: 0.78rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--bleu-nuit); opacity: 0.7; margin-top: 0.6rem;">Kookiya Flavors</p>
+      </div>
+    </section>
 
-        <div class="intention">
-          <p>La fleur que vous avez tenue tout à l'heure s'appelle hibiscus. En Martinique, on dit sorrel. Au Sénégal, bissap. En Thaïlande, gra jeab.</p>
-          <p>Ce soir, elle était sur votre table. Dans vos mains. Dans vos verres. Dans tout ce que vous avez mangé.</p>
-          <p>Ce repas commence maintenant. Que chaque bouchée soit une présence.</p>
-        </div>
-
-        <div class="kookiya-block">
-          <p class="kookiya-block__label">La question</p>
-          <p class="kookiya-block__text"><em>Si vous deviez associer l'hibiscus à un souvenir ou à un endroit dans votre vie, ce serait lequel ?</em></p>
-        </div>
-
-        <div class="kookiya-block">
-          <p class="kookiya-block__label">Le silence guidé · 60 secondes</p>
-          <p class="kookiya-block__text">Avant la dernière bouchée. Mains à plat sur la table. Yeux fermés si vous le souhaitez. Respirez ce que vous sentez dans la pièce.</p>
-        </div>
-
-        <div class="timer" data-duration="60" data-timer-id="kookiya">
-          <button class="timer__start" type="button">Commencer · 60 secondes</button>
-          <div class="timer__ring" aria-hidden="true">
-            <svg viewBox="0 0 200 200">
-              <circle cx="100" cy="100" r="92" class="timer__ring-track"></circle>
-              <circle cx="100" cy="100" r="92" class="timer__ring-progress"></circle>
-            </svg>
-            <div class="timer__count">60</div>
-          </div>
-          <p class="timer__final t-quote">Maintenant, vous savez.</p>
-        </div>
-
-        <div class="kookiya-block" style="margin-top: 3rem;">
-          <p class="kookiya-block__label">Le mot de la fondatrice</p>
-          <div class="kookiya-block__text" style="text-align: left; max-width: var(--max-text); margin-inline: auto;">
-            <p>Cette Capsule est née d'une certitude : l'hibiscus est le seul ingrédient que j'ai rencontré qui existe aussi intensément sur trois continents à la fois — et qui reste reconnaissable partout. Le même pétale rouge. Le même goût acide-floral. La même façon d'arrêter les conversations.</p>
-            <p>La plupart du temps, en France, on le rencontre dans un sachet de tisane. Parfois dans un jus vitaminé. Rarement dans une assiette. Presque jamais dans un verre à pied.</p>
-            <p>Kookiya existe pour changer ça. Pas avec de la complexité — avec de l'intention. Une fleur séchée entre les doigts. Une couleur qui monte dans l'eau chaude. Un silence de 90 secondes.</p>
-            <p>Tu ne verras plus l'hibiscus comme avant.</p>
-          </div>
-        </div>
-
-        <div class="signature">
-          <p class="signature__name">La Fondatrice</p>
-          <p class="signature__role">Kookiya Flavors</p>
-        </div>
-
-        <a class="cta-inline" href="#purchase">Vivre Bissap · 65€</a>
+    <!-- Achat -->
+    <section id="achat" class="section section--narrow" aria-labelledby="ach-title">
+      <div class="section__inner" style="text-align: center;">
+        <p class="eyebrow section__eyebrow">Prix de lancement</p>
+        <h2 id="ach-title" class="t-h2 section__title">65€</h2>
+        <p class="t-sub section__sub" style="margin-inline: auto;">Accès permanent · format mobile-first · à consulter pendant ta préparation et le soir même.</p>
+        <a class="cta-inline" href="#" data-cta-stripe>Vivre Bissap · 65€</a>
+        <p style="font-family: var(--font-display); font-style: italic; font-size: 0.95rem; color: var(--bleu-nuit); opacity: 0.7; margin-top: 1.5rem;">Paiement sécurisé Stripe · accès immédiat après confirmation.</p>
       </div>
     </section>
 
   </main>
 
-  <a class="cta-float" href="#kookiya" data-cta-float>Vivre Bissap · 65€</a>
+  <a class="cta-float" href="#" data-cta-stripe data-cta-float>Vivre Bissap · 65€</a>
 
   <footer class="footer" role="contentinfo">
     <p class="footer__signature"><em>La Fondatrice · Kookiya Flavors</em></p>
@@ -1005,7 +207,11 @@
     <a class="footer__home" href="https://kookiyaflavors.com">Retour Kookiya Flavors</a>
   </footer>
 
-  <script src="/content/data.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="/content/data.js" defer></script>
   <script src="/js/app.js" defer></script>
+  <script src="/js/animations.js" defer></script>
 </body>
 </html>
