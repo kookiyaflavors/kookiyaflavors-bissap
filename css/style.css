@@ -1197,6 +1197,44 @@ section.hero {
 }
 .t-ingr tr:last-child td { border-bottom: 0; }
 
+/* Variante multi-colonnes (recettes annexes §08 avec portions 4/6/8) */
+.t-ingr--multi td:not(:first-child) {
+  text-align: right;
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--accent-1);
+  white-space: nowrap;
+  padding-left: 0.5rem;
+}
+.t-ingr--multi th {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent-1);
+  padding: 0 0.5rem 0.4rem 0;
+  text-align: right;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent-2) 40%, transparent);
+  white-space: nowrap;
+}
+.t-ingr--multi th:first-child {
+  text-align: left;
+  padding-left: 0;
+}
+.creation-panel__service {
+  font-size: 0.93rem;
+  line-height: 1.65;
+  margin-top: 0.75rem;
+  color: var(--bleu-nuit);
+  opacity: 0.88;
+}
+.creation-panel__service em {
+  font-style: italic;
+  color: var(--accent-1);
+  margin-right: 0.25rem;
+}
+
 /* Note italique encadrée */
 .note {
   margin-top: 1.5rem;
