@@ -930,6 +930,65 @@ section.hero {
   padding-bottom: 0.3rem;
 }
 
+/* ──────────────────────────────────────────────
+   Visuels Nano Banana (J+1 · sources 928×1152 portrait)
+   ────────────────────────────────────────────── */
+
+.visual {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background: color-mix(in srgb, var(--accent-2) 8%, var(--iv));
+}
+
+.visual--hero-sec {
+  aspect-ratio: 4/5;
+  max-width: 600px;
+  margin: clamp(2rem, 4vh, 3rem) auto 0;
+  border-radius: 4px;
+}
+
+.visual--territoire {
+  aspect-ratio: 4/5;
+  border-radius: 4px;
+  margin-block: 1.25rem 0;
+}
+
+.visual--ambiance {
+  aspect-ratio: 5/4;
+  max-width: 1000px;
+  border-radius: 4px;
+  margin: 2rem auto;
+}
+
+.visual--atelier {
+  aspect-ratio: 4/5;
+  border-radius: 4px;
+  max-width: 480px;
+  margin: 2rem auto;
+}
+
+.visual--creation {
+  aspect-ratio: 4/5;
+  border-radius: 4px 4px 0 0;
+  margin: calc(-1 * clamp(1.5rem, 2.8vw, 2.25rem)) calc(-1 * clamp(1.5rem, 2.8vw, 2.25rem)) 1.25rem;
+}
+
+.visual--annexe {
+  aspect-ratio: 4/5;
+  border-radius: 4px;
+  max-width: 420px;
+  margin: 1.25rem auto;
+}
+
+.visual--signature {
+  aspect-ratio: 4/5;
+  border-radius: 4px;
+  max-width: 320px;
+  margin: 2rem auto;
+}
+
 /* ─── Mouvement réduit ─── */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
